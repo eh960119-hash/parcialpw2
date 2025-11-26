@@ -1,0 +1,91 @@
+/* Paleta inspirada en los colores de la UP: azul oscuro y dorado/amarillo */
+:root {
+    --color-principal: #004a99; /* Azul UP */
+    --color-secundario: #ffc107; /* Dorado/Amarillo */
+    --color-fondo: #f8f9fa; /* Gris claro */
+    --color-texto: #343a40;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    margin: 0;
+    /* Usamos Flexbox para centrar fácilmente el contenido en la página */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Alineado arriba para no centrar en toda la altura */
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+.contenedor-principal {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px; /* Ancho máximo para mejor legibilidad */
+}
+
+h1 {
+    color: var(--color-principal);
+    text-align: center;
+    border-bottom: 2px solid var(--color-secundario);
+    padding-bottom: 10px;
+    margin-top: 0;
+    font-size: 1.5rem;
+}
+
+/* Estilo para etiquetas de entrada */
+label {
+    display: block; /* Ocupan todo el ancho para una mejor disposición */
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Estilo para campos de entrada */
+input[type="text"], input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* padding y border se incluyen en el width total */
+}
+
+/* Estilo del botón  */
+button {
+    background-color: var(--color-principal);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    width: 100%;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #00377a; /* Un azul ligeramente más oscuro */
+}
+
+/* Estilo del área de resultado */
+.resultado-area {
+    margin-top: 30px;
+    padding: 15px;
+    border: 1px solid var(--color-secundario);
+    background-color: #fffde7; /* Fondo suave para el resultado */
+    border-radius: 4px;
+}
+
+#resultado {
+    font-weight: bold;
+    color: var(--color-texto);
+    text-align: center;
+    margin: 0;
+    min-height: 20px; /* Asegura que el área tenga altura incluso si está vacía */
+}

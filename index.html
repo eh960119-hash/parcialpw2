@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Promedio | P2 Web III</title>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div class="contenedor-principal">
+        <h1>Calculadora de Promedio de Calificaciones</h1>
+        <p>Introduce el nombre del estudiante y sus tres calificaciones para calcular el promedio.</p>
+
+        <label for="nombre">Nombre del Estudiante:</label>
+        <input type="text" id="nombre" placeholder="Ej: Juan Pérez">
+
+        <label for="nota1">Calificación 1:</label>
+        <input type="number" id="nota1" min="0" max="100" placeholder="0-100">
+
+        <label for="nota2">Calificación 2:</label>
+        <input type="number" id="nota2" min="0" max="100" placeholder="0-100">
+
+        <label for="nota3">Calificación 3:</label>
+        <input type="number" id="nota3" min="0" max="100" placeholder="0-100">
+
+        <button onclick="calcularPromedio()">Calcular Promedio</button>
+
+        <div class="resultado-area">
+            <p id="resultado">Esperando datos...</p>
+        </div>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
